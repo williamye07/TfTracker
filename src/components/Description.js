@@ -22,7 +22,7 @@ const TextWrapper = styled.div`
 const Description = () => {
     return(
         <TextWrapper>
-            TfTracker is an app that can help you scout and keep track of the enemies that you face in your TFT games! Start off by 
+            TfT-scouter is an app that can help you scout and keep track of the enemies that you face in your TFT games! Start off by 
             entering your opponent names. If you face an opponent, click the check button and the 
             corresponding box will turn green. If an opponent is no longer in the game, click the x button and the corresponding box will
             turn red. You cannot face opponents that are red or green.
