@@ -23,7 +23,7 @@ function App() {
     <div className="App">
         <HeaderContainer>
         <HeaderIcon src={Pengu}/>
-        <Header>TfTracker</Header>
+        <Header>TfT-scouter</Header>
         </HeaderContainer>
         <Container>
           <Description/>
