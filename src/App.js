@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
 
+
+import Pengu from './images/pengu.png'
+
+import HeaderContainer from './components/HeaderContainer';
+import Header from './components/Header';
+import HeaderIcon from './components/HeaderIcon';
+import InputContainerStyled from './components/InputContainer';
+
+import {Description, AlgDescription} from './components/Description';
+
+
+
+const Container = styled.div`
+  background: #2ecfc84a;
+  min-height: 100vh;
+  height: 100%; 
+`
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <HeaderContainer>
+        <HeaderIcon src={Pengu}/>
+        <Header>TfTracker</Header>
+        </HeaderContainer>
+        <Container>
+          <Description/>
+          <InputContainerStyled />
+          <AlgDescription/>
+        </Container>
     </div>
   );
 }
